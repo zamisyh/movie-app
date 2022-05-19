@@ -12,11 +12,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route exact path='/' element={<Home />}></Route>
-          <Route exact path='/movie/:id' element={<MovieDetail/>}></Route>
-          <Route path="*" element={<PageNotFound/>}></Route>
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route exact path='/' element={<Home />}></Route>
+            <Route exact path='/movie/:id' element={<MovieDetail/>}></Route>
+            <Route path="*" element={<PageNotFound/>}></Route>
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
